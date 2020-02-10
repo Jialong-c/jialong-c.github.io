@@ -1,8 +1,8 @@
 # Site settings
 title:JL Blog
-SEOTitle:嘉龙的博客 | Jialong Blog
+SEOTitl: 嘉龙的博客 | Jialong Blog
 header-img: img/post-bg-desk.jpg
-email:jialongfyd@gmail.com
+email: jialongfyd@gmail.com
 description: "Every failure is leading towards success."
 keyword: "Jialong,Jialong Blog"
 url: "https://jialong-c.github.io"          # your host, for absolute URL
