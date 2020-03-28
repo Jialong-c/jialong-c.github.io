@@ -90,7 +90,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
 
-接着重新回到**firstactivity**中来重写**`onCreateOptionsMenu()`**方法，重写方法可以使用**Ctrl+O**快捷键，如图![image-20200328180013910](D:\GitHub\Jialong-c.github.io\_posts\image-20200328180013910.png)
+接着重新回到**firstactivity**中来重写**`onCreateOptionsMenu()`**方法，重写方法可以使用**Ctrl+O**快捷键，如图
 
 然后再**`onCreateOptionsMenu()`**方法中编写如下代码：
 
