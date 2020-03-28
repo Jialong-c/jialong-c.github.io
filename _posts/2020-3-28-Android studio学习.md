@@ -8,9 +8,9 @@ header-img: img/android studio.png
 catalog: true
 tags:
     - Android studio
-    - Mobile application
+    - - Mobile application
 ---
-> **activity**学习
+> **Android studio学习**
 
 
 
