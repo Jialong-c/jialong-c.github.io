@@ -3,13 +3,13 @@
   "short_name": "JL Blog",
   "description": "A personal blog by engineer",
   "icons": [{
-    "src": "icons/128.png",
+    "src": "icons/pwa_logo.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/640.jpg",
-    "sizes": "640-640",
-    "type": "image/jpg"
+    "src": "icons/pwa_logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
   }],
   "background_color": "#fff",
   "theme_color": "#000",

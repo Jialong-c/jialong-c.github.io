@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Android studio学习
-subtitle:   学习Android studio中掌握到的一些技能
+title:      Android studio学习（一）
+subtitle:   学习Android studio关于activity的相关技能
 date:       2020-03-28
 author:     Jialong
 header-img: img/android studio.png
@@ -100,4 +100,6 @@ public boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
 ```
+
+
 
