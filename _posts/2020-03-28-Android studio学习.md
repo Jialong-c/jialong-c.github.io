@@ -58,3 +58,46 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
 通过静态方法**`makeText()`**创建出一个**Toast**对象，然后调用**`show()`**将**Toast**显示出来就可以了。需要注意的是，**`makeText()`**方法需要传入3个参数。第一个参数是**Context**,也就是**Toast**要求的上下文，由于活动本身就是一个**Context**对象，因此这里直接传入**firstactivity.this**即可。第二个参数是**Toast**显示的文本内容，第三个参数是**Toast**显示的时长，有两个内置常量可以选择**Toast.LENGTH_SHORT**和**Toast.LENGTH_LONG**
+
+
+
+
+
+## 2.在活动中使用Menu
+
+
+
+手机屏幕的空间非常有限，如果活动中有很多菜单需要显示，这时候就需要使用**Menu**让菜单得到展示的同时，也能不占用任何屏幕空间。
+
+
+
+首先在**res**目录下新建一个**menu**文件夹，右击**res**目录-->**New**-->**Directory**，输入文件夹名**menu**。接着在这个文件夹下在新建一个名为**main**的菜单文件，右击**menu**文件夹-->**New**-->**Menu resource file**。然后再main.xml中添加如下代码：
+
+```java
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_item"
+        android:title="add"/>
+    <item
+        android:id="@+id/remove_item"
+        android:title="remove"/>
+</menu>
+```
+
+
+
+这里我们创建了两个菜单项，其中<**item**>标签就是用来创建具体的某一菜单项，然后通过**android:id**给这个菜单项指定一个唯一的标识符，通过**android:title**给这个菜单项制定一个名称。
+
+
+
+接着重新回到**firstactivity**中来重写**`onCreateOptionsMenu()`**方法，重写方法可以使用**Ctrl+O**快捷键，如图![image-20200328180013910](D:\GitHub\Jialong-c.github.io\_posts\image-20200328180013910.png)
+
+然后再**`onCreateOptionsMenu()`**方法中编写如下代码：
+
+```java
+public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+```
+
