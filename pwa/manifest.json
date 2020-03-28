@@ -3,9 +3,9 @@
   "short_name": "JL Blog",
   "description": "A personal blog by engineer",
   "icons": [{
-    "src": "icons/128.ico",
+    "src": "icons/128.png",
     "sizes": "128x128",
-    "type": "image/ico"
+    "type": "image/png"
   }, {
     "src": "icons/640.jpg",
     "sizes": "640-640",
