@@ -7,8 +7,8 @@ author：  Jialong
 head-image:	img/android studio.png
 catalog:	true
 tags:
-	-Android studio
-	-Mobile application
+	- Android studio
+	- Mobile application
 ---
 
 > **activity**学习
