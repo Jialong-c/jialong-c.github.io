@@ -11,10 +11,8 @@ tags:
     - Mobile application
 ---
 > **Android studio学习**
-
-# 探究“活动”
-
-
+>
+> # 探究“活动”
 
 
 
@@ -24,7 +22,7 @@ Toast是Android系统提供的一种提醒方式，在程序中可以使用它�
 
 
 
-首先需要定义弹出Toast的触发点，我们以界面上的按钮（**button1**）作触发器，点击按钮时将弹出一个Toast。在**`onCreate()`**方法中添加如下代码：
+首先需要定义弹出Toast的触发点，我们以界面上的按钮（**button 1**）作触发器，点击按钮时将弹出一个Toast。在**`onCreate()`**方法中添加如下代码：
 
 ```java
 protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +40,7 @@ protected void onCreate(Bundle savedInstanceState) {
     }
 ```
 
-在活动中，可以通过**`findViewById()`**方法获取在布局文件（此代码中为first_layout.xml文件）中定义的元素，这里我们传入**R.id.button_1**。**Button**在布局文件下的定义代码如下：
+在活动中，可以通过**`findViewById()`**方法获取在布局文件（此代码中为first_layout.xml文件）中定义的元素，这里我们传入**R.id.button_1**。**button**在布局文件下的定义代码如下：
 
 ```java
 <Button
@@ -63,7 +61,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
 
-## 2.在活动中使用Menu
+## 2. 在活动中使用Menu
 
 
 
@@ -100,6 +98,41 @@ public boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
 ```
+
+通过**`getMenuInflater()`**方法能够得到**MenuInflater**对象，再调用它的**`inflate()`**方法就可以给当前活动创建菜单了。**`inflate()`**方法接收两个参数，第一个参数用于指定我们通过哪一个资源文件来创建菜单，这里传入**R.menu.main**。第二个参数用于指定我们的菜单项将添加到哪一个**Menu**对象中去，这里直接使用**`onCreateOptionsMenu()`**方法中传入的**menu**参数。返回**true**表示允许菜单显示，返回**false**无法显示菜单。
+
+
+
+现在已经可以显示出菜单，但这还不够，我们要让菜单可用，就要定义菜单响应事件。在**firstactivity**中重写**`onOptionsItemSelected()`**方法：
+
+```java 
+public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.add_item:
+                Toast.makeText(this,"you clicked add",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.remove_item:
+                Toast.makeText(this,"you clicked remove",Toast.LENGTH_SHORT).show();
+                break;
+            default:
+        }
+        return true;
+    }
+```
+
+在**`onOptionsItemSelected()`**方法中，通过调用**`item.getItemId()`**来判断我们点击的是哪一个菜单项，然后给每个菜单项加入逻辑处理。
+
+
+
+## 3. 使用Intent关联活动
+
+
+
+### 3.1 使用显式Intent
+
+
+
+在项目中创建一个新活动**secondactivity**，在second_layout.xml文件下创建**button 2**，接下来介绍显式**Intent**如何使用。
 
 
 
