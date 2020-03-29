@@ -4,7 +4,7 @@ title:      Android studio学习（一）
 subtitle:   学习Android studio关于activity的相关技能
 date:       2020-03-28
 author:     Jialong
-header-img: img/Blog/android studio.png
+header-img: img/android studio.png
 catalog: true
 tags:
     - Android studio
