@@ -43,7 +43,8 @@ anchorjs: true                          # if you want to customize anchor. check
 gems: [jekyll-paginate]
 
 
-
+#替换默认的Markdown引擎为kramdown
+#markdown: kramdown
 
 # Markdown settings
 # replace redcarpet to kramdown,
