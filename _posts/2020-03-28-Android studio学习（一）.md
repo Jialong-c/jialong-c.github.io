@@ -4,7 +4,7 @@ title:      Android studio学习（一）
 subtitle:   学习Android studio关于activity的相关技能
 date:       2020-03-28
 author:     Jialong
-header-img: img/android studio.png
+header-img: img/Blog/android studio.png
 catalog: true
 tags:
     - Android studio
@@ -88,7 +88,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
 
-接着重新回到**firstactivity**中来重写**`onCreateOptionsMenu()`**方法，重写方法可以使用**Ctrl+O**快捷键，如图
+接着重新回到**firstactivity**中来重写**`onCreateOptionsMenu()`**方法，重写方法可以使用**Ctrl+O**快捷键。
 
 然后再**`onCreateOptionsMenu()`**方法中编写如下代码：
 
