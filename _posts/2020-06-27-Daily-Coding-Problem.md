@@ -35,4 +35,4 @@ for i in range(0,len(numlist)):
 
 **Result:**
 
-![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/daily coding problem/#1.png)
+![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/daily-coding-problem/#1.png)
