@@ -1,11 +1,11 @@
 ---
-layout:    post
-title:     Daily Coding Problem
-subtitle:  Daily Coding Problem
-date:      2020-06-27
-author:    Jialong
-header-img:img/daily coding problem.png
-catalog:   true
+layout:          post
+title:               Daily Coding Problem
+subtitle:         Daily Coding Problem
+date:              2020-06-27
+author:          Jialong
+header-img:  img/daily coding problem.png
+catalog:          true
 ---
 
 ># Daily Coding Problem
