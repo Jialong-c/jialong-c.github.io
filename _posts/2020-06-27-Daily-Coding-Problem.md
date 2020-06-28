@@ -36,7 +36,7 @@ for i in range(0, len(numlist)):
 
 **Result:**
 
-![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/#1.png)
+![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/problem1.png)
 
 
 
@@ -68,6 +68,6 @@ print(numlist_result)
 
 **Result:**
 
-![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/#2_1.png)
+![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/problem2_1.png)
 
-![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/#2_2.png)
+![](https://raw.githubusercontent.com/Jialong-c/images/master/Blog/coding/problem2_2.png)
